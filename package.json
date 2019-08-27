@@ -1,0 +1,17 @@
+{
+  "name": "pipefy-interface",
+  "version": "1.0.0",
+  "description": "Pipefy interface with drag 'n drop funcionality",
+  "main": "index.js",
+  "git repository": "https://github.com/guiaramos/pipefy-interface.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Pipefy",
+    "Drag",
+    "Drop"
+  ],
+  "author": "Guilherme Ramos",
+  "license": "ISC"
+}
