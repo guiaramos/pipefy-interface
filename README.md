@@ -34,7 +34,6 @@
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
-- [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
@@ -43,26 +42,16 @@
 
 ## About The Project
 
-The [Pipefy](https://www.pipefy.com) interface is known for having the most . The project is focused on the MERN stack, and the challenge is to build a web app and mobile app.
+The [Pipefy](https://www.pipefy.com) manages processes within minutes using the 'no-code platform'. The project objective is to be the most close to [Pipefy](https://www.pipefy.com) UI for "simple task management" list.
 
-The app has features such as live match with [Socket.io][websocket-url]. Also is available on Android and iOS due to [React Native][reactnative-url].
+The project is build in [React.js](react-url) with [react-dnd](reactdnd-url) for drag n' drop functionality.
 
 ### Built With
 
 This is the list of the tech stack:
 
-[![React Native][reactnative-shield]][reactnative-url]
-
 [![React][react-shield]][react-url]
-[![WebSocket.io][websocket-shield]][websocket-url]
-[![JSX][jsx-shield]][jsx-url]
-
-[![MongoDB Atlas][mongodb-shield]][mongodb-url]
-[![Express][express-shield]][express-url]
-[![Nodemon][nodemon-shield]][nodemon-url]
-[![Insomnia][insomnia-shield]][insomnia-url]
-[![Mongoose][mongoose-shield]][mongoose-url]
-[![Cors][cors-shield]][cors-url]
+[![React DnD][reactdnd-shield]][reactdnd-url]
 
 <!-- GETTING STARTED -->
 
@@ -85,7 +74,7 @@ npm install npm@latest -g
 1. Clone the repo
 
 ```sh
-git clone https://github.com/guiaramos/pipefy-interface.git.git
+git clone https://github.com/guiaramos/pipefy-interface.git
 ```
 
 2. Install NPM packages
@@ -98,48 +87,7 @@ npm install
 
 ## Usage
 
-This app is can be used similiar as Tinder, where you can like or dislike the other devs and receive a Match information.
-
-<!-- ROADMAP -->
-
-## Roadmap
-
-Backend:
-The first step of this project, the server uses [Express][express-url] for the connection with the apps and [Nodemon][nodemon-url] to automate the refresher while changes occur.
-
-Server creation:
-The first API was created to create de user database, at this step, the [Insomnia][insomnia-url] desk app took place to help to debug the API. After some tests, I finally reached out a good model for connecting the with the [MongoDB Atlas][mongodb-url]. Then, thanks to [Mongoose][mongoose-url] that helped to keep the communication with server simple, I created the structure for the backend, after some researches, being segregated in: model, controllers, and view. At this moment, I also realized that the server.js was getting messy, therefore, I segregated the "routes" in another file.
-
-Users table:
-Now, with the server settings ready, I created the first model that keeps the user's registration. The idea is to use the GitHub API to get the information from the users, once the user has to have a GitHub account. The Schema was set as name, user, bio and avatar.
-After some research, I created then the API connection inside the controller using [axios][axios-url] module to help execute the following:
-
-1. gets the user name from the app API.
-2. posts the user name on the GitHub API.
-3. saves the necessary information on a specific variable.
-4. posts variable on the database constructor.
-
-Also, after some tests, I have implemented and if conditions to avoid creating the same user on the table.
-
-Likes and Dislikes:
-I created 2 fields on each user registration where I can add the MongoDB ID of each user that liked or disliked. On this way, I also created 3 new API methods to post the like and dislikes and also to get the users who have not interacted yet.
-
-Also, after some research, I figured out that MongoDB could block access to React, therefore I have connected the module to allow this connection
-
-Frontend
-Webapp:
-With [React][react-url] I start the web app frontend and UI development.
-
-The login page was very simple and easy to develop, as soon as the user inserts the GitHub username to log in the connection with the API for the database starts, again with [axios][axios-url], it registers the user/or retrieve the info of the existent user. I decided to create a separated file on services folder for the main API address and another for the routes.
-
-The main page is loaded after the user logs in, I created the styles with a grid of 3 per row for the cards with the picture, name, bio, and button for like or dislike.
-At this moment, I had to use the new APIs from [React][react-url]: useEffect and useState to handle the creation of the card and reload of the card list.
-
-Mobile:
-Developed with React-Native, the app has the similarities of the web app. there are some changes on the scripts for like and dislike in reason to adapt for [JavaFX][javafx-url]. Tindev is available on Android and iOS.
-
-Live Match:
-By the end of the project, I added the live feature of the match, using [WebSocket.io][websocket-url] when two Dev liked each other.
+The app usage is very simple: just drag the card and hover to the card on the destination desired.
 
 <!-- CONTRIBUTING -->
 
@@ -164,13 +112,17 @@ Contributions are what make the open source community such an amazing place to b
 
 ## Acknowledgements
 
-- [OmniStack 8.0](https://rocketseat.com.br/week-8/inscricao)
+- [React DnD](https://react-dnd.github.io/react-dnd/about)
+- [react-context](https://reactjs.org/docs/context.html)
+- [react-useState](https://reactjs.org/docs/hooks-state.html)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [mongodb-shield]: https://img.shields.io/badge/MongoDB-database-red.svg?logo=MongoDB
 [mongodb-url]: https://www.mongodb.com/what-is-mongodb
+[reactdnd-shield]: https://img.shields.io/badge/react--dnd-utility-blue.svg?logo=React
+[reactdnd-url]: https://react-dnd.github.io/react-dnd/
 [express-shield]: https://img.shields.io/badge/Express-framework-red.svg?logo=JavaScript
 [express-url]: https://expressjs.com/
 [nodemon-shield]: https://img.shields.io/badge/Nodemon-auto--reload-red.svg?logo=Nodemon

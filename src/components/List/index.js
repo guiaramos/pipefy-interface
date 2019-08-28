@@ -1,9 +1,12 @@
+/** Dependencies import */
 import React from "react";
 import { MdAdd } from "react-icons/md";
 
+/** Modules import */
 import { Container } from "./styles";
 import Card from "../Card";
 
+/** Creates the list */
 export default function List({ data, index: listIndex }) {
   return (
     <Container done={data.done}>

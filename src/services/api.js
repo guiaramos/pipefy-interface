@@ -1,3 +1,9 @@
+/** API overview
+ *
+ *  This represents the API connection with the DB that returns a JSON file.
+ *
+ */
+
 export function loadLists() {
   return [
     {

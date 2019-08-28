@@ -1,3 +1,8 @@
+/**
+ *
+ * Styles for the Header
+ *
+ */
 import styled from "styled-components";
 
 export const Container = styled.div`
