@@ -8,7 +8,7 @@ export function loadLists() {
           id: 1,
           content: "{SAMPLE}Update weekly KPIs",
           labels: ["rgb(255, 13, 0)"],
-          user: "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/profile.png"
+          user: "https://avatars0.githubusercontent.com/u/49703106?v=4"
         }
       ]
     },
@@ -20,13 +20,13 @@ export function loadLists() {
           id: 6,
           content: "{SAMPLE}Create performance dashboard",
           labels: ["rgb(255, 247, 0)"],
-          user: "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/profile.png"
+          user: "https://avatars0.githubusercontent.com/u/49703106?v=4"
         },
         {
           id: 14,
           content: "{SAMPLE}Create CSM job decription",
           labels: ["rgb(19, 205, 242)"],
-          user: "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/profile.png"
+          user: "https://avatars0.githubusercontent.com/u/49703106?v=4"
         }
       ]
     },
@@ -38,13 +38,13 @@ export function loadLists() {
           id: 7,
           content: "{SAMPLE} Translate sustainability report to spanish",
           labels: ["rgb(19, 205, 242)"],
-          user: "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/profile.png"
+          user: "https://avatars0.githubusercontent.com/u/49703106?v=4"
         },
         {
           id: 111,
           content: "{SAMPLE} Finish pipefy interface",
           labels: ["rgb(255, 247, 0)"],
-          user: "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/profile.png"
+          user: "https://avatars0.githubusercontent.com/u/49703106?v=4"
         }
       ]
     },
